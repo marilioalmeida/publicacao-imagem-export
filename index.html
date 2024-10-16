@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerador de Publicações</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WGTS64JN1T"></script>
     <script>
@@ -15,7 +19,6 @@
         gtag('config', 'G-WGTS64JN1T');
     </script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <style>
         * {
@@ -30,7 +33,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             gap: 20px;
         }
 
@@ -131,6 +134,20 @@
             color: #333;
             margin-bottom: 10px;
         }
+
+        footer {
+            margin-top: auto;
+            padding: 10px;
+            background-color: #d32f2f;
+            color: white;
+            width: 100%;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+            margin: 0 10px;
+        }
     </style>
 </head>
 
@@ -158,6 +175,15 @@
         <button onclick="updateContent()">Atualizar Conteúdo</button>
         <button onclick="exportToImage()">Exportar como Imagem</button>
     </div>
+
+    <footer>
+        <a href="https://www.linkedin.com/in/marilio-almeida/" target="_blank">
+            <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://github.com/marilioalmeida" target="_blank">
+            <i class="fab fa-github fa-2x"></i>
+        </a>
+    </footer>
 
     <script>
         function updateContent() {
